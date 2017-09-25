@@ -11,36 +11,406 @@
 
   <!-- CUSTOM STYLE -->
   <link rel="stylesheet" href="css/alex.css">
-  <link rel="stylesheet" href="css/alex-style.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/template-scripts.js"></script>
+  <script type="text/javascript" src="js/alex.js"></script>
+
+  <script type="text/JavaScript">
+    function showMessage(){ var message = document.getElementById("message").value; display_message.innerHTML= message; }
+  </script>
 </head>
 
-<body class="size-1140">
-  <!-- TOP NAV WITH LOGO -->
-  <header>
-    <div id="topbar">
-      <div class="line">
-        <div class="s-12 m-6 l-6">
-          <p>Kiambu County : <strong>(Kiambu County Code)</strong> | <strong>(Email Holder)</strong></p>
-        </div>
-        <div class="s-12 m-6 l-6">
-          <div class="social right">
-            <a href="http://facebook.com"><i class="icon-facebook_circle"></i></a> <a href="http://twitter.com"><i class="icon-twitter_circle"></i></a> <a href="http://google.com"><i class="icon-google_plus_circle"></i></a>
-            <a href="http://instagram.com"><i class="icon-instagram_circle"></i></a>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-Services-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">KIAMBU COUNTY(22)</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="bs-Services-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" <i class="fa fa-facebook-square" aria-hidden="true"> Facebook</a></li>
+            <li class="divider"></li>
+            <li>
+              <a href="#" <i class="fa fa-instagram" aria-hidden="true"></i> Istagram</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#" <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#" <i class="fa fa-whatsapp" aria-hidden="true"></i> Wats app</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#" <i class="fa fa-slack" aria-hidden="true"></i> Slack</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </body>
+</nav>
+
+<body>
+
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #myInput {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+
+      #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 18px;
+      }
+
+      #myTable th,
+      #myTable td {
+        text-align: left;
+        padding: 12px;
+      }
+
+      #myTable tr {
+        border-bottom: 1px solid #ddd;
+      }
+
+      #myTable tr.header,
+      #myTable tr:hover {
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pal" <h2>WARD DEVELOPMENT</h2>
+    </div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for wards.." title="Type in a name">
+
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:50%;">Ward</th>
+        <th style="width:50%;">Constituency</th>
+      </tr>
+      <tr>
+        <td><a href="gituamba.html">Gituamba</td>
+        <td>Gatundu North</td>
+      </tr>
+      <tr>
+        <td><a href="githobokoni.html">Githobokoni</td>
+        <td>Gatundu North</td>
+      </tr>
+      <tr>
+        <td><a href="chania.html">Chania</td>
+        <td>Gatundu North</td>
+      </tr>
+      <tr>
+        <td><a href="mag'u.html">Man'gu</td>
+        <td>Gatundu North</td>
+      </tr>
+      <tr>
+        <td><a href="kiamwanga.html">Kiamwanga</td>
+        <td>Gatundu South</td>
+      </tr>
+      <tr>
+        <td><a href="kiganjo.html">Kiganjo</td>
+        <td>Gatundu South</td>
+        <tr>
+          <tr>
+            <td><a href="ndarugo.html">Ndarugo</td>
+            <td>Gatundu South</td>
+            <tr>
+              <tr>
+                <td><a href="ngenda.html">Ngenda</td>
+                <td>Gatundu South</td>
+                <tr>
+          <td><a href="kijabe.html">Kijabe</td>
+          <td>Lari</td>
+        </tr>
+      </tr>
+      <tr>
+          <td><a href="township-b.html">Township</td>
+        <td>Thika Town</td>
+      </tr>
+      <tr>
+          <td><a href="kinale.html">Kinale</td>
+        <td>Lari</td>
+      </tr>
+      <tr>
+        <td><a href="murera.html">Murera</td>
+        <td>Juja</td>
+      </tr>
+      <tr>
+        <td><a href="karai.html">Karai</td>
+        <td>Kikuyu</td>
+      </tr>
+      <tr>
+          <td><a href="githunguri.html">Githunguri</td>
+        <td>Githunguri</td>
+      </tr>
+      <tr>
+          <td><a href="gitaru.html">Gitaru</td>
+        <td>Kabete</td>
+      </tr>
+      <tr>
+          <td><a href="birioni.html">Bibirioni</td>
+        <td>Limuru</td>
+      </tr>
+      <tr>
+          <td><a href="gitothua.html">Gitothua</td>
+        <td>Ruiru</td>
+      </tr>
+      <tr>
+        <td><a href="tin'gan'ga.html">Ting'ang'a</td>
+        <td>Kiambu</td>
+      </tr>
+      <tr>
+          <td><a href="cianda.html">Cianda</td>
+        <td>Kiambaa</td>
+      </tr>
+      <tr>
+          <td><a href="ndarugo.html">Ndarugo</td>
+        <td>Gatundu South</td>
+      </tr>
+
+      <tr>
+          <td><a href="nachu.html">Nachu</td>
+        <td>Kikuyu</td>
+      </tr>
+      <tr>
+          <td><a href="gatongora.html">Gatongora</td>
+        <td>Ruiru</td>
+      </tr>
+      <tr>
+          <td><a href="karuri.html">Karuri</td>
+        <td>Kiambaa</td>
+      </tr>
+      <tr>
+          <td><a href="riabai.html">Riabai</td>
+        <td>Kiambu</td>
+      </tr>
+      <tr>
+          <td><a href="mwiki.html">Mwiki</td>
+        <td>Ruiru</td>
+      </tr>
+      <tr>
+          <td><a href="mwihoko.html">Mwihoko</td>
+        <td>Ruiru</td>
+      </tr>
+      <tr>
+          <td><a href="kiuu.html">Kiuu</td>
+        <td>Ruiru</td>
+      </tr>
+      <tr>
+          <td><a href="kahawa-wendani.html">Kahawa Wendani</td>
+        <td>Ruiru</td>
+      </tr>
+      <tr>
+          <td><a href="kahawa-sukari.html">Kahawa Sukari</td>
+        <td>Ruiru</td>
+      </tr>
+      <tr>
+          <td><a href="biashara.html">Biashara</td>
+        <td>Ruiru</td>
+      </tr>
+      <tr>
+        <td><a href="ndumberi-3.html">Ndumberi 3</td>
+        <td>Kiambu</td>
+      </tr>
+      <tr>
+        <td><a href="township.html">Township</td>
+        <td>Kiambu</td>
+      </tr>
+      <tr>
+        <td><a href="ndenderu.html">Ndenderu</td>
+        <td>Kiambaa</td>
+      </tr>
+      <tr>
+        <td><a href="muchatha.html">Muchatha</td>
+        <td>Kiambaa</td>
+      </tr>
+      <tr>
+        <td><a href="kihara.html">Kihara</td>
+        <td>Kiambaa</td>
+      </tr>
+      <tr>
+          <td><a href="limuru-central.html">Limuru Central</td>
+        <td>Limuru</td>
+      </tr>
+      <tr>
+          <td><a href="ndeiya.html">Ndeiya</td>
+        <td>Limuru</td>
+      </tr>
+      <tr>
+          <td><a href="ngecha.html">Ngecha Tigoni</td>
+        <td>Limuru</td>
+      </tr>
+      <tr>
+          <td><a href="muguga.html">Muguga</td>
+        <td>Kabete</td>
+      </tr>
+      <tr>
+          <td><a href="nyadhuna.html">Nyadhuna</td>
+        <td>Kabete</td>
+      </tr>
+      <tr>
+          <td><a href="kabete.html">Kabete</td>
+        <td>Kabete</td>
+      </tr>
+      <tr>
+          <td><a href="uthiru.html">Uthiru</td>
+        <td>Kabete</td>
+      </tr>
+      <tr>
+          <td><a href="githiga.html">Githiga</td>
+        <td>Githunguri</td>
+      </tr>
+      <tr>
+          <td><a href="ikinu.html">Ikinu</td>
+        <td>Githunguri</td>
+      </tr>
+      <tr>
+          <td><a href="ngewa.html">Ngewa</td>
+        <td>Githunguri</td>
+      </tr>
+      <tr>
+          <td><a href="komothai.html">Komothai</td>
+        <td>Githunguri</td>
+      </tr>
+      <tr>
+        <td><a href="theta.html">Theta</td>
+        <td>Juja</td>
+      </tr>
+      <tr>
+        <td><a href="juja.html">Juja</td>
+        <td>Juja</td>
+      </tr>
+      <tr>
+        <td><a href="witeitha.html">Witeitha</td>
+        <td>Juja</td>
+      </tr>
+      <tr>
+        <td><a href="kalimoni.html">Kalimoni</td>
+        <td>Juja</td>
+      </tr>
+      <tr>
+          <td><a href="nyunduma.html">Nyunduma</td>
+        <td>Lari</td>
+      </tr>
+      <tr>
+          <td><a href="kamburu.html">Kamburu</td>
+        <td>Lari</td>
+      </tr>
+      <tr>
+          <td><a href="lari.html">Lari</td>
+        <td>Lari</td>
+      </tr>
+      <tr>
+          <td><a href="gatuanyaga.html">Gatuanyaga</td>
+        <td>Thika Town</td>
+      </tr>
+      <tr>
+          <td><a href="kamenu.html">Kamenu</td>
+        <td>Thika Town</td>
+      </tr>
+      <tr>
+          <td><a href="hospita.html">Hospita</td>
+        <td>Thika Town</td>
+      </tr>
+
+
+    </table>
+
+    <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+
+  </body>
+
+
+  <!--landingpage---->
+
+
+  <!-- Section: about -->
+
+
+
+
+
+  </div>
+    <section id="contact">
+    </section>
+
+    <!--/#contact-->
+    <footer class="site-footer">
+      <footer id="footer">
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <p>&copy; 2017 Alex Kinuthia.</p>
+              </div>
+              <div class="col-sm-6">
+                <p class="pull-right">Crafted by <a href="https://github.com/Alex-Kinuthia">Alex Kinuthia</a></p>
           </div>
-        </div>
-      </div>
-    </div>
+          </div>
+          </div>
+          </div>
+          </footer>
+          </footer>
 
-  </header>
-
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Constituency</a>
-    <div class="dropdown-content">
-      <a href="#">Name</a>
-      <a href="#">Name</a>
-      <a href="#">Name</a>
-    </div>
+          <script type="text/javascript" src="js/jquery.js"></script>
+          <script type="text/javascript" src="js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+          <script type="text/javascript" src="js/wow.min.js"></script>
+          <script type="text/javascript" src="js/mousescroll.js"></script>
+          <script type="text/javascript" src="js/smoothscroll.js"></script>
+          <script type="text/javascript" src="js/jquery.countTo.js"></script>
+          <script type="text/javascript" src="js/lightbox.min.js"></script>
+          <script type="text/javascript" src="js/main.js"></script>
+          </script>

@@ -1,3 +1,209 @@
 .img-icons {
-height:250px;
+  height: 250px;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.alex {
+  padding-top: 10%;
+  padding-left: 40%;
+  font-size: 10px;
+}
+
+#contact {
+  padding-top: 45px;
+  padding-bottom: 0;
+}
+
+#contact-us {
+  padding-bottom: 25px;
+}
+
+#contact-us .heading {
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.form-control {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, .1);
+  height: 30px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  min-height: 180px;
+  resize: none;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  padding-left: 70px;
+  font-weight: 300;
+}
+
+ul.address {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 8px;
+}
+
+.contact-info ul li a {
+  color: #fff;
+}
+
+.btn-submit {
+  display: block;
+  padding: 12px;
+  width: 100%;
+  color: #fff;
+  border: 0;
+  margin-top: 40px;
+}
+
+#footer {
+  background-color: black;
+}
+
+.footer-top {
+  position: relative;
+  padding: 30px 0
+}
+
+#footer .footer-bottom {
+  background-color: black;
+  padding: 20px 0 10px;
+}
+
+#footer .footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#footer .social-icons {
+  margin-top: 15px;
+}
+
+#footer .social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .social-icons ul li a {
+  background-color: black;
+  border-radius: 4px;
+  line-height: 33px;
+}
+
+#footer .social-icons ul li a:hover {
+  background-color: black;
+}
+
+#footer .social-icons ul li a.envelope:hover {
+  background-color: #CECB26;
+}
+
+#footer .social-icons ul li a.facebook:hover {
+  background-color: #3b5999;
+}
+
+#footer .social-icons ul li a.twitter:hover {
+  background-color: #2ac6f7;
+}
+
+#footer .social-icons ul li a.dribbble:hover {
+  background-color: #ff5b92;
+}
+
+#footer .social-icons ul li a.linkedin:hover {
+  background-color: #036dc0;
+}
+
+#footer .social-icons ul li a.tumblr:hover {
+  background-color: #ff6b00;
+}
+
+.site-footer {
+  background-color: black;
+  color: white;
+}
+
+.pal {
+  padding-left: 40%;
+  font-size: 30px;
 }
